@@ -1,0 +1,84 @@
+/* Remove default bullets */
+ul,
+.ulBase {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+.ulBase {
+  margin: 2rem;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* Style the.liVersion/arrow */
+.liVersion {
+  cursor: pointer;
+}
+
+/* Create the.liVersion/arrow with a unicode, and style it */
+.liVersion::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the.liVersion/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+table {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the.liVersion/arrow (with JavaScript) */
+.active {
+  display: block;
+  padding-left: 2em;
+}
+
+#liChange {
+  padding-left: 1em;
+}
+
+#tree_view {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+td {
+  display: inline-block;
+}
+
+body {
+  background-image: linear-gradient(rgb(255, 243, 221), rgb(189, 166, 155));
+  background-repeat: no-repeat ;
+  font-family:'Roboto Condensed', sans-serif;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#tit{
+  font-weight: bold;
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+  margin: auto;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+html {
+  height: 100%;
+}
